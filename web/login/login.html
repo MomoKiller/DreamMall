@@ -1,15 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>登录</title>
+    <link rel="stylesheet" href="../resource/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../resource/common/c/common.css">
     <link rel="stylesheet" href="./c/login.css">
     <script src="../resource/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../resource/bootstrap/js/bootstrap.min.js"></script>
     <!--  引用公共资源  -->
+    <script src="../resource/common/j/common.js"></script>
 </head>
 <body>
 
+    <div class="wrapper">
+        <div class="page-header">
+            <div class="common_contain">
+                <h1>LOGO <small>desc</small></h1>
+            </div>
+        </div>
+
+        <!--  中间  -->
+        <div class="main">
+            <div class="common_contain">
+                <!--  普通登录  -->
+                <div class="login_form">
+                    <div class="title">帐号密码登录</div>
+                    <div class="tr input_tr">
+                        <label>帐号</label>
+                        <input type="text" class="user" placeholder="请输入ERP帐号">
+                    </div>
+                    <div class="tr input_tr">
+                        <label>密码</label>
+                        <input type="password" class="password" placeholder="请输入ERP密码">
+                    </div>
+                    <div class="tr">
+                        <a class="login_btn active">登录</a>
+                    </div>
+                    <div class="tr drop_wrap">
+                        <a class="drop_btn">跳过</a>
+                    </div>
+                    <div class="tr">
+                        <div class="td toWeChart">
+                            <img src="i/u10629.png">
+                            <p>微信登录</p>
+                        </div>
+                    </div>
+                </div>
+                <!--  微信登录  -->
+                <div class="weChart_form">
+                    <div class="title">微信登录</div>
+                    <div class="img_wrap">
+                        <img src="" class="weChart_img">
+                    </div>
+                    <div class="desc">
+                        <i></i>打开微信扫一扫登录
+                    </div>
+                    <div class="toLogin_form">
+                        <a class="toLogin_btn">帐号密码登录</a>
+                    </div>
+                </div>
+                <!--  帐号绑定  -->
+                <div class="bind_form">
+                    <div class="title">帐号绑定</div>
+                    <div class="tr input_tr">
+                        <label>帐号</label>
+                        <input type="text" class="user" placeholder="请输入ERP帐号">
+                    </div>
+                    <div class="tr input_tr">
+                        <label>密码</label>
+                        <input type="password" class="password" placeholder="请输入ERP密码">
+                    </div>
+                    <div class="tr">
+                        <a class="bind_btn active">绑定</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--  公共尾部  -->
+    <div class="common_tail">
+        <div class="common_contain">
+            <span>版权</span>
+        </div>
+    </div>
     <script src="./j/login.js"></script>
 </body>
 </html>

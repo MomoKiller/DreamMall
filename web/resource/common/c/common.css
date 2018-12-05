@@ -3,21 +3,31 @@ html,body{
     margin: 0;
     font-family: 'Microsoft YaHei';
     font-size: 14px;
-    color: #000000;
+    color: #333333;
     height: 100%;
     width: 100%;
-}
-/* 公共样式 */
-.common_contain{
-    width: 1200px;
-    margin: 0 auto;
 }
 label{
     padding: 0;
     margin: 0;
 }
+ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* 公共 */
+.common_wrapper{
+    height: calc(100% - 102px);
+    min-height: 800px;
+}
+.common_contain{
+    width: 1200px;
+    margin: 0 auto;
+}
 
-/* 公共尾部样式 */
+
+/* 公共尾部 */
 .common_tail{
     text-align: center;
     width: 100%;
@@ -26,4 +36,63 @@ label{
     border-top: 1px solid #d3d3d3;
     background: #f2f2f2;
     min-width: 1200px;
+}
+
+/* 公共头部 */
+.common_head{
+    height: 50px;
+    line-height: 50px;
+    background: #f2f2f2;
+    min-width: 1200px;
+}
+.common_head .msg_tip{
+    width: 500px;
+    float: left;
+}
+.common_head .head_r{
+    float: right;
+}
+.common_head .head_r li{
+    float: left;
+    margin: 5px 10px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.common_head .head_r li:nth-last-child(1){
+    margin-right: 0;
+}
+.common_head .head_r .cart{
+
+}
+.common_head .head_r .cart i{
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: url('../i/cart.png') no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin: 10px 5px;
+}
+.common_head .head_r .cart span{
+
+}
+.common_head .head_r .user{
+
+}
+.common_head .head_r .user .img_wrap{
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    float: left;
+    overflow: hidden;
+    margin: 0 5px;
+}
+.common_head .head_r .user img{
+    height: 40px;
+    width: 40px;
+}
+.common_head .head_r .user span{
+
 }

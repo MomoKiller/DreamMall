@@ -1,0 +1,38 @@
+.common_wrapper{
+    height: calc(100% - 102px);
+    min-height: 800px;
+}
+.common_contain{
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* 公共头部 */
+.common_head{
+    height: 50px;
+    line-height: 50px;
+    background: #f2f2f2;
+    min-width: 1200px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+/* 导航 */
+.common_nav{
+    width: 200px;
+    min-height: 500px;
+    border: 1px solid #e3e3e3;
+    margin-top: 10px;
+    float: left;
+    padding: 10px;
+}
+
+/* 主体 */
+.common_main{
+    border: 1px solid #e3e3e3;
+    min-height: 500px;
+    width: 990px;
+    margin-top: 10px;
+    float: right;
+    padding: 10px 10px 50px;
+}

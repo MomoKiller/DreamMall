@@ -1,0 +1,44 @@
+.data_wrap{
+
+}
+.data_wrap .tr{
+    overflow: hidden;
+    background-color: #f2f2f2;
+}
+.data_wrap .tr:nth-child(2){
+    color: #5bc0de;
+    font-size: 20px;
+}
+.data_wrap .tr .td{
+    width: 193px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+}
+.echarts_wrap{
+
+}
+.echarts_wrap .title{
+    height: 40px;
+    line-height: 40px;
+    background-color: #f2f2f2;
+    margin-top: 20px;
+}
+.echarts_wrap .title label{
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 3px solid #d3d3d3;
+    height: 25px;
+    line-height: 25px;
+}
+.echarts_wrap .title a{
+    cursor: pointer;
+    color: #5bc0de;
+}
+.echarts_wrap .eachart_form{
+    height: 300px;
+    width: 100%;
+    border: 1px solid #e3e3e3;
+    margin-top: 10px;
+}

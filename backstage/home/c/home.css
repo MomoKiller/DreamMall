@@ -12,7 +12,7 @@
 .common_head{
     height: 50px;
     line-height: 50px;
-    background: #f2f2f2;
+    background-color: #f2f2f2;
     min-width: 1200px;
     border-bottom: 1px solid #e3e3e3;
 }
@@ -23,6 +23,7 @@
 .common_head .img_wrap img{
     width: 100px;
     height: 46px;
+    cursor: pointer;
 }
 .common_head .head_r{
     float: right;
@@ -70,7 +71,7 @@
 /* 导航 */
 .common_nav{
     width: 200px;
-    min-height: 500px;
+    min-height: 621px;
     border: 1px solid #e3e3e3;
     margin-top: 10px;
     float: left;
@@ -82,6 +83,11 @@
 .common_nav ul li{
     height: 30px;
     line-height: 30px;
+    cursor: pointer;
+}
+.common_nav ul li.active,
+.common_nav ul li:hover{
+    background-color: #f2f2f2;
 }
 .common_nav ul li a{
     color: #333333;
@@ -94,7 +100,7 @@
 /* 主体 */
 .common_main{
     border: 1px solid #e3e3e3;
-    min-height: 500px;
+    min-height: 621px;
     width: 990px;
     margin-top: 10px;
     float: right;

@@ -81,20 +81,34 @@
 
 }
 .common_nav ul li{
-    height: 30px;
-    line-height: 30px;
-    cursor: pointer;
+
 }
-.common_nav ul li.active,
-.common_nav ul li:hover{
+.common_nav ul li.active>a,
+.common_nav ul li a:hover{
     background-color: #f2f2f2;
 }
 .common_nav ul li a{
     color: #333333;
     text-decoration: none;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
 }
+
 .common_nav ul li a i{
     margin-right: 5px;
+}
+/* 二级导航 */
+.common_nav ul li .level_2{
+    margin-left: 20px;
+    display: none;
+}
+.common_nav ul li .level_2 a{
+    display: block;
+}
+.common_nav ul li .level_2 a.active{
+    background-color: #f2f2f2;
 }
 
 /* 主体 */

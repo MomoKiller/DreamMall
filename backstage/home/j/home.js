@@ -82,14 +82,14 @@ $(function(){
                     $('.common_nav>ul>li').removeClass('active');
                     if(_this.find('.level_2').is(':hidden')){       //展示
                         _this.find('.level_2').css('display', 'block');
-                        $(this).find('i').addClass('glyphicon-triangle-bottom').removeClass('glyphicon-triangle-right');
+                        //$(this).find('i').addClass('glyphicon-triangle-bottom').removeClass('glyphicon-triangle-right');
                         // 展示二级菜单的第一个
                         domLiSec.removeClass('active');
                         _this.find('.level_2 a').eq(0).addClass('active');
                         main.loadMain(index1, index2);
                     }else{
                         _this.find('.level_2').css('display', 'none');
-                        $(this).find('i').addClass('glyphicon-triangle-right').removeClass('glyphicon-triangle-bottom');
+                        //$(this).find('i').addClass('glyphicon-triangle-right').removeClass('glyphicon-triangle-bottom');
                     }
                 }else{      // 一级菜单
                     domLiSec.removeClass('active');

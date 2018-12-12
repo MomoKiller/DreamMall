@@ -1,0 +1,72 @@
+/* 字体图标的使用 */
+
+@font-face {
+    font-family: "AAAAAAA";
+    src: url('../iconfont/iconfont.ttf?t=1544627240208') format('truetype');
+    /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+}
+
+[class^="icon-custom-"]:before,
+[class*="icon-custom-"]:before {
+    font-family: 'AAAAAAA'!important;
+}
+
+.icon-custom-wodemian2:before {
+    content: "\e60f";
+}
+
+.icon-custom-yduigouwuchexuanzhong:before {
+    content: "\e68d";
+}
+
+.icon-custom-weibiaoti555:before {
+    content: "\e63c";
+}
+
+.icon-custom-wodemian:before {
+    content: "\e60e";
+}
+
+.icon-custom-kinds:before {
+    content: "\e60d";
+}
+
+.icon-custom-sousuo:before {
+    content: "\e633";
+}
+
+.icon-custom-iconfontzhizuobiaozhun023101:before {
+    content: "\e667";
+}
+
+.icon-custom-wode_xuanzhong:before {
+    content: "\e61b";
+}
+
+.icon-custom-more:before {
+    content: "\e61e";
+}
+
+.icon-custom-fenlei:before {
+    content: "\e602";
+}
+
+.icon-custom-sousuo1:before {
+    content: "\e65b";
+}
+
+.icon-custom-shouye:before {
+    content: "\e658";
+}
+
+.icon-custom-sort-full:before {
+    content: "\e65c";
+}
+
+.icon-custom-wode:before {
+    content: "\e67b";
+}
+
+.icon-custom-shouye-:before {
+    content: "\e608";
+}

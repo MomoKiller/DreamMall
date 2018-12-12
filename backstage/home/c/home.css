@@ -12,25 +12,109 @@
 .common_head{
     height: 50px;
     line-height: 50px;
-    background: #f2f2f2;
+    background-color: #f2f2f2;
     min-width: 1200px;
     border-bottom: 1px solid #e3e3e3;
 }
+.common_head .img_wrap{
+    width: 500px;
+    float: left;
+}
+.common_head .img_wrap img{
+    width: 100px;
+    height: 46px;
+    cursor: pointer;
+}
+.common_head .head_r{
+    float: right;
+}
+.common_head .head_r li{
+    float: left;
+    margin: 5px 10px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.common_head .head_r li:nth-last-child(1){
+    margin-right: 0;
+}
+.common_head .head_r .bell{
+
+}
+.common_head .head_r .bell i{
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: url('../i/bell.svg') no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin: 10px 5px;
+}
+.common_head .head_r .user{
+
+}
+.common_head .head_r .user .img_wrap{
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    float: left;
+    overflow: hidden;
+    margin: 0 5px;
+}
+.common_head .head_r .user img{
+    height: 40px;
+    width: 40px;
+}
+
 
 /* 导航 */
 .common_nav{
     width: 200px;
-    min-height: 500px;
+    min-height: 621px;
     border: 1px solid #e3e3e3;
     margin-top: 10px;
     float: left;
     padding: 10px;
 }
+.common_nav ul{
+
+}
+.common_nav ul li{
+
+}
+.common_nav ul li.active>a,
+.common_nav ul li a:hover{
+    background-color: #f2f2f2;
+}
+.common_nav ul li a{
+    color: #333333;
+    text-decoration: none;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.common_nav ul li a i{
+    margin-right: 5px;
+}
+/* 二级导航 */
+.common_nav ul li .level_2{
+    margin-left: 20px;
+    display: none;
+}
+.common_nav ul li .level_2 a{
+    display: block;
+}
+.common_nav ul li .level_2 a.active{
+    background-color: #f2f2f2;
+}
 
 /* 主体 */
 .common_main{
     border: 1px solid #e3e3e3;
-    min-height: 500px;
+    min-height: 621px;
     width: 990px;
     margin-top: 10px;
     float: right;

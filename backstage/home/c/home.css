@@ -29,29 +29,53 @@
 .common_head .head_r{
     float: right;
     color: #ffffff;
+    height: 35px;
+    margin-top: 13px;
 }
 .common_head .head_r li{
     float: left;
     margin: 0 10px;
+    height: 35px;
 }
 .common_head .head_r li a,
 .common_head .head_r li i{
     cursor: pointer;
+    font-size: 16px;
+}
+.common_head .head_r li a.toFront{
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    width: 90px;
+    background-color: #f0938c;
+    border-radius: 5px;
+    text-align: center;
+}
+.common_head .head_r li a.user_nam{
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    width: 65px;
+    background-color: #f0938c;
+    border-radius: 5px;
+    text-align: center;
 }
 .common_head .head_r li:nth-last-child(1){
     margin-right: 0;
 }
 .common_head .head_r .bell{
-
+    
 }
 .common_head .head_r .bell i{
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+    text-align: center;
     background: url('../i/bell.svg') no-repeat;
-    background-size: 100% 100%;
-    float: left;
-    margin: 20px 5px;
+    background-size: 20px 20px;
+    background-position: 7px 8px;
+    background-color: #f0938c;
 }
 .common_head .head_r .user{
 
@@ -62,20 +86,17 @@
 
 /* 导航 */
 .common_nav{
-    width: 82px;
+    width: 80px;
     height: 100%;
     float: left;
     padding: 25px 0;
     background-color: #2E3748;
     border-right: 1px solid #d4d4d4;
 }
-.common_nav ul{
+.level_1 ul{
     overflow: hidden;
 }
-.common_nav ul li{
-
-}
-.common_nav ul li a{
+.level_1 ul li a{
     color: #ffffff;
     text-decoration: none;
     display: block;
@@ -84,44 +105,40 @@
     cursor: pointer;
     margin: 5px 0;
 }
-.common_nav ul li.active>a,
-.common_nav ul li a:hover{
+.level_1 ul li.active>a,
+.level_1 ul li a:hover{
     background-color: #ffffff;
     color: #E1251A;
     border-left: 2px solid #E1251A;
 }
-.common_nav ul li a i{
+.level_1 ul li a i{
     margin-right: 5px;
-}
-/* 二级导航 */
-.common_nav ul li .level_2{
-    margin-left: 20px;
-    display: none;
-}
-.common_nav ul li .level_2 a{
     display: block;
-    height: 35px;
-    line-height: 35px;
-    margin: 5px 0;
-}
-.common_nav ul li .level_2 a.active{
-    background-color: #ffffff;
-    color: #E1251A;
+    height: 25px;
+    width: 25px;
+    float: left;
+    margin: 5px;
 }
 
 /* new 二级导航 */
-.common_nav.level_2{
+.level_2{
     background-color: #ffffff;
+    width: 85px;
 }
-.common_nav.level_2 ul li:nth-child(1){
+.level_2 .nav_wrap{
+    display: none;
+}
+.level_2 .nav_wrap.active{
+    display: block;
+}
+.level_2 .nav_title{
+    height: 35px;
+    line-height: 35px;
+    margin: 5px 0;
+    padding-left: 5px;
     border-bottom: 1px solid #333333;
 }
-.common_nav.level_2 ul li:nth-child(1) a,
-.common_nav.level_2 ul li:nth-child(1) a:hover{
-    background-color: #ffffff;
-    color: #333333;
-}
-.common_nav.level_2 ul li a{
+.level_2 ul li a{
     color: #333333;
     text-decoration: none;
     display: block;
@@ -129,13 +146,14 @@
     line-height: 35px;
     cursor: pointer;
     margin: 5px 0;
+    padding-left: 5px;
 }
-.common_nav.level_2 ul li.active>a,
-.common_nav.level_2 ul li a:hover{
+.level_2 ul li.active>a,
+.level_2 ul li a:hover{
     background-color: #d4d4d4;
     color: #E1251A;
 }
-.common_nav.level_2 ul li a i{
+.level_2 ul li a i{
     margin-right: 5px;
 }
 
@@ -145,7 +163,7 @@
     height: calc(100% - 10px);
     width: 1020px;
     float: right;
-    padding: 10px 10px 50px;
+    padding: 20px 15px;
     background-color: #ffffff;
     margin: 5px 5px;
 }

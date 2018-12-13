@@ -2,6 +2,8 @@
  * Created by pkk on 2018/12/6.
  */
 $(function(){
+    var _nav1Index = 0;
+    var _nav2Index = 0;
     var main = {
         api: {
             /**** 单页面URL *****/
@@ -70,41 +72,22 @@ $(function(){
         },
         // 左侧导航
         loadComNav: function(){
-            var domLi = $('.common_nav>ul>li>a');
-            var domLiSec = $('.common_nav li .level_2 a');
-            var index1 = 0;
-            var index2 = 0;
-            // 一级菜单事件
-            domLi.bind('click', function(){
-                var _this = $(this).parent('li');
-                index1 = _this.index();
-                if(_this.find('.level_2').length > 0){  // 有二级菜单
-                    $('.common_nav>ul>li').removeClass('active');
-                    if(_this.find('.level_2').is(':hidden')){       //展示
-                        _this.find('.level_2').css('display', 'block');
-                        //$(this).find('i').addClass('glyphicon-triangle-bottom').removeClass('glyphicon-triangle-right');
-                        // 展示二级菜单的第一个
-                        domLiSec.removeClass('active');
-                        _this.find('.level_2 a').eq(0).addClass('active');
-                        main.loadMain(index1, index2);
-                    }else{
-                        _this.find('.level_2').css('display', 'none');
-                        //$(this).find('i').addClass('glyphicon-triangle-right').removeClass('glyphicon-triangle-bottom');
-                    }
-                }else{      // 一级菜单
-                    domLiSec.removeClass('active');
-                    _this.addClass('active').siblings().removeClass('active');
-                    main.loadMain(index1, index2);
-                }
+            var domNav1 = $('.level_1 li a');   // 一级导航
+            var domNav2 = $('.level_2 li a');   // 二级导航
+            var navWrap = $('.level_2 .nav_wrap');
+            domNav1.bind('click', function(){
+                $(this).parent('li').addClass('active').siblings().removeClass('active');
+                _nav1Index = $(this).parent('li').index();
+                navWrap.removeClass('active').eq(_nav1Index).addClass('active');
+                _nav2Index = navWrap.eq(_nav1Index).find('li.active').index()
+                main.loadMain(_nav1Index, _nav2Index);
             });
-            // 二级菜单事件
-            domLiSec.bind('click', function(){
-                var _this = $(this);
-                $('.common_nav>ul>li').removeClass('active');
-                domLiSec.removeClass('active');
-                _this.addClass('active').siblings().removeClass('active');
-                main.loadMain(_this.parents('li').index(), _this.index());
+            domNav2.bind('click', function(){
+                $(this).parent('li').addClass('active').siblings().removeClass('active');
+                _nav2Index = $(this).parent('li').index();
+                main.loadMain(_nav1Index, _nav2Index);
             });
+
         },
         // 头部信息
         loadComHead: function(){

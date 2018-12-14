@@ -1,0 +1,106 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    background: #f7f7f7;
+}
+
+header .logo {
+    width: 20%;
+    height: 15px;
+    background: url('../images/logo.png') no-repeat center;
+    background-size: cover;
+}
+
+header .search-input {
+    width: 80%;
+    padding-left: 5px;
+}
+
+.yd-search-input {
+    padding: 0;
+    background: #fff;
+    border: 1px solid #d2d2d2;
+}
+
+.index-wrap {
+    background: #fff;
+}
+
+.roll-wrap {
+    display: flex;
+}
+
+.roll-wrap .roll-icon {
+    width: 35px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #d81e06;
+}
+
+.yd-rollnotice-item {
+    padding-left: 15px;
+    font-size: 12px;
+    color: #002e6d;
+}
+
+.yd-grids-3 .yd-grids-item {
+    overflow: hidden;
+}
+
+.yd-grids-3 .yd-grids-item img {
+    width: 100%;
+    height: auto;
+}
+
+.module-title {
+    position: relative;
+    height: 45px;
+    margin: 10px 0;
+}
+
+.module-title img {
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.module-title .more-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+
+.module-title .more-btn em {
+    padding-right: 5px;
+    color: #e43a31;
+}
+
+.module-title .more-btn .icon-custom-you {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #e43a31;
+    color: #fff;
+}
+
+.yd-list {
+    background: #fff;
+}
+
+.yd-list-other {
+    display: block;
+}
+
+.list-price {
+    display: block;
+    font-size: 12px;
+    color: #e1251b;
+    font-weight: bold;
+    text-align: center;
+}

@@ -11,6 +11,10 @@
     font-family: 'AAAAAAA'!important;
 }
 
+.icon-custom-you:before {
+    content: "\e648";
+}
+
 .icon-custom-wodemian2:before {
     content: "\e60f";
 }
@@ -69,4 +73,14 @@
 
 .icon-custom-shouye-:before {
     content: "\e608";
+}
+
+#app {
+    max-width: 640px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.yd-tabbar {
+    height: 50px;
 }

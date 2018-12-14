@@ -1,0 +1,178 @@
+.manage_wrap{
+
+}
+.manage_wrap .btn_wrap{
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+}
+/*筛选条件*/
+.manage_wrap .screen_wrap{
+    height: 165px;
+    width: 100%;
+    background-color: #eeeeee;
+    margin-top: 15px;
+    padding: 5px 15px;
+    /* overflow: hidden; */
+}
+.manage_wrap .screen_wrap .tr{
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+}
+.manage_wrap .screen_wrap .tr:nth-last-child(1){
+    margin-top: 10px;
+}
+.manage_wrap .screen_wrap .tr .td{
+    float: left;
+}
+.manage_wrap .screen_wrap .tr .td:nth-child(odd){
+    width: 70px;
+}
+.manage_wrap .screen_wrap .tr .td:nth-child(even){
+    width: 250px;
+}
+.manage_wrap .screen_wrap .tr .td input{
+    height: 30px;
+    line-height: 30px;
+    width: 205px;
+}
+/*改写bootstrap样式--start*/
+.manage_wrap .screen_wrap .tr .td .dropdown button{
+    width: 205px;
+    height: 30px;
+    line-height: 16px;
+    border-radius: 0;
+    text-align: left;
+}
+.manage_wrap .screen_wrap .tr .td .dropdown button .caret{
+    float: right;
+    margin: 7px 0;
+}
+.manage_wrap .screen_wrap .tr .td .dropdown ul{
+    width: 205px;
+}
+/*改写bootstrap样式--end*/
+.manage_wrap .screen_wrap .tr a.screen_btn{}
+.manage_wrap .screen_wrap .tr a.clean_btn{
+    color: #337ab7;
+    margin-left: 10px;
+}
+/*tab*/
+.manage_wrap .tab_wrap{
+    height: 30px;
+    width: 100%;
+    margin-top: 15px;
+}
+.manage_wrap .tab_wrap ul{
+
+}
+.manage_wrap .tab_wrap ul li{
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    border: 1px solid #333333;
+    text-align: center;
+}
+.manage_wrap .tab_wrap ul li.active{
+    color: #ffffff;
+    background-color: #747474;
+}
+/* 商品列表*/
+.manage_wrap .list_wrap{
+    width: 100%;
+    overflow: hidden;
+}
+.manage_wrap .list_wrap .scroll_wrap{
+    overflow-x: auto;
+    min-height: 430px;
+}
+.manage_wrap .list_wrap .thead{
+    height: 30px;
+}
+.manage_wrap .list_wrap .thead .th{
+    height: 30px;
+    display: inline-flex;
+    border: 1px solid #333333;
+    background-color: #eeeeee;
+}
+.manage_wrap .list_wrap .thead .th .td{
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+.manage_wrap .list_wrap .tbody{
+    
+}
+.manage_wrap .list_wrap .tbody li{
+    height: 100px;
+    display: inline-flex;
+}
+.manage_wrap .list_wrap .tbody li .td{
+    width: 140px;
+    float: left;
+}
+.manage_wrap .list_wrap .tbody li .td i{
+
+}
+.manage_wrap .list_wrap .tbody li .td i.active{
+
+}
+.manage_wrap .list_wrap .tbody li .td span.serial_no{
+
+}
+.manage_wrap .list_wrap .tbody li .td img{
+
+}
+.manage_wrap .list_wrap .tbody li .td .product_name{
+
+}
+.manage_wrap .list_wrap .tbody li .td .product_type{
+
+}
+.manage_wrap .list_wrap .tbody li .td .product_price{
+
+}
+.manage_wrap .list_wrap .tbody li .td .td_wrap{
+
+}
+.manage_wrap .list_wrap .tbody li .td .td_wrap label{
+
+}
+.manage_wrap .list_wrap .tbody li .td .td_wrap .visitor_num{
+    
+}
+.manage_wrap .list_wrap .tbody li .td .td_wrap .browse_num{
+    
+}
+.manage_wrap .list_wrap .tbody li .td .td_wrap .stock{
+    
+}
+.manage_wrap .list_wrap .tbody li .td .td_wrap .to_detail{
+    
+}
+/* 批量 */
+.manage_wrap .batch_wrap{
+    height: 50px;
+    margin-top: 15px;
+}
+.manage_wrap .batch_wrap .btn_left{
+
+}
+.manage_wrap .batch_wrap .btn_left span.all{
+
+}
+.manage_wrap .batch_wrap .btn_left span.all i{
+
+}
+.manage_wrap .batch_wrap .btn_left span.all i.active{
+
+}
+.manage_wrap .batch_wrap .btn_left a{
+
+}
+.manage_wrap .batch_wrap .page_wrap{
+
+}

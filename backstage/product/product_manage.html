@@ -97,7 +97,7 @@
                         <label class="product_type">【物料】</label>
                     </div>
                     <div class="td">
-                        ￥<label class="product_price">100.00</label>
+                        <label class="product_price">￥<span>100.00</span></label>
                     </div>
                     <div class="td no_line">
                         <div class="td_wrap">
@@ -121,10 +121,8 @@
                         <label class="create_date">2018-10-16 20:00:00</label>
                     </div>
                     <div class="td">
-                        <div class="td_wrap">
-                            <a class="edit_btn">编辑</a>
-                            <a class="del_btn">删除</a>
-                        </div>
+                        <a class="edit_btn">编辑</a>
+                        <a class="del_btn">删除</a>
                     </div>
                 </li>
                 <li>
@@ -140,7 +138,7 @@
                         <label class="product_type">【物料】</label>
                     </div>
                     <div class="td">
-                        ￥<slabelpan class="product_price">100.00</label>
+                        <label class="product_price">￥<span>100.00</span></label>
                     </div>
                     <div class="td no_line">
                         <div class="td_wrap">
@@ -164,10 +162,8 @@
                         <label class="create_date">2018-10-16 20:00:00</label>
                     </div>
                     <div class="td">
-                        <div class="td_wrap">
-                            <a class="edit_btn">编辑</a>
-                            <a class="del_btn">删除</a>
-                        </div>
+                        <a class="edit_btn">编辑</a>
+                        <a class="del_btn">删除</a>
                     </div>
                 </li>
             </ul>
@@ -176,7 +172,8 @@
     <!--  批量操作  -->
     <div class="batch_wrap">
         <div class="btn_left">
-            <span class="all">当页全选<i></i></span>
+            <input type="checkbox" value="option1">
+            <span class="all">当页全选</span>
             <a class="uder_btn btn btn-default">下架</a>
             <a class="change_btn btn btn-default">修改分类</a>
             <a class="delsom_btn btn btn-default">批量删除</a>
@@ -184,6 +181,157 @@
         <!--  分页  -->
         <div class="page_wrap"></div>
     </div>
-    
+</div>
+<!--  新建商品  -->
+<div class="new_wrap">
+    <ul class="tab">
+        <li class="active">基本信息</li>
+        <li>规格/库存</li>
+        <li>商品详情</li>
+    </ul>
+    <div class="edit_wrap">
+        <!--  基本信息  -->
+        <div class="edit_form active">
+            <div class="tr">
+                <div class="td">序号:</div>
+                <div class="td">
+                    <input type="text" class="product_xh" placeholder="请输入序号">
+                    <span class="xh_tip">数字越大，排名越靠前，如果为空，默认排序方式为创建时间</span>
+                </div>
+            </div>
+            <div class="tr">
+                 <div class="td"><span class="bsx">*</span>商品名称:</div>
+                 <div class="td">
+                     <input type="text" class="pro_name" placeholder="请输入商品名称">
+                 </div>
+            </div>
+            <div class="tr">
+                <div class="td"><span class="bsx">*</span>商品图片:</div>
+                <div class="td">
+                    <div class="img_wrap">
+                        <img class="product_img" src="../product/i/defaultImg.png">
+                        <a class="addimg">+添加图片</a>
+                    </div>
+                    <span class="img_tip">建议图片长宽比1:1，长方形图片将被自动裁剪为方形</span>
+                </div>
+            </div>
+            <div class="tr">
+                <div class="td"><span class="bsx">*</span>商品分类:</div>
+                <div class="td">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="product_fl" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            请选择分类
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tr">
+                <div class="td">商品属性:</div>
+                <div class="td">
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" value="option1"> 新品
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" value="option2"> 热门
+                    </label>
+                </div>
+            </div>
+            <div class="tr">
+                 <div class="td"><span class="bsx">*</span>是否上架:</div>
+                 <div class="td">
+                     <label class="radio-inline">
+                         <input type="radio" name="inlineRadioOptions" value="option1"> 上架
+                     </label>
+                     <label class="radio-inline">
+                         <input type="radio" name="inlineRadioOptions" value="option2"> 暂不上架，放入厂库
+                     </label>
+                 </div>
+            </div>
+            <div class="tr">
+                 <div class="td"><span class="bsx">*</span>是否群发推送:</div>
+                 <div class="td">
+                     <label class="radio-inline">
+                         <input type="radio" name="inlineRadioOptions" value="option1">  是
+                     </label>
+                     <label class="radio-inline">
+                         <input type="radio" name="inlineRadioOptions" value="option2"> 否
+                     </label>
+                 </div>
+            </div>
+        </div>
+        <!--  规格/库存  -->
+        <div class="edit_form">
+            <div class="tr">
+                <div class="td"><span class="bsx">*</span>规格:</div>
+                <div class="td">
+                    <a class="add_gg btn btn-primary">添加规格</a>
+                </div>
+            </div>
+            <div class="tr">
+                <div class="td"></div>
+                <div class="td">
+                    <div class="title">
+                        <div class="td"><span class="bsx">*</span>规格</div>
+                        <div class="td"><span class="bsx">*</span>库存</div>
+                        <div class="td"><span class="bsx">*</span>零售价</div>
+                        <div class="td"><span class="bsx">*</span>折扣价</div>
+                        <div class="td"><span class="bsx">*</span>预警库存</div>
+                        <div class="td"><a class="glyphicon glyphicon-trash"></a></div>
+                    </div>
+                    <ul class="gg_wrap">
+                        <li>
+                            <div class="list_wrap">
+                                <div class="td">
+                                    <input type="text" class="product_gg">
+                                </div>
+                                <div class="td">
+                                    <input type="text" class="product_kc">
+                                </div>
+                                <div class="td">
+                                    <input type="text" class="product_ls">
+                                </div>
+                                <div class="td">
+                                    <input type="text" class="product_zk">
+                                </div>
+                                <div class="td">
+                                    <input type="text" class="product_yj">
+                                </div>
+                            </div>
+                            <div class="choice_wrap">
+                                <div class="td">关联商品<a class="glyphicon glyphicon-trash">选择商品</a></div>
+                            </div>
+                            <div class="product_list">
+                                <div class="product_wrap">
+                                    <div class="img_wrap">
+                                        <img src="../product/i/defaultImg.png" alt="">
+                                    </div>
+                                    <a class="desc">想象力商品</a>
+                                </div>
+                                <div class="product_wrap">
+                                    <div class="img_wrap">
+                                        <img src="../product/i/defaultImg.png" alt="">
+                                    </div>
+                                    <a class="desc">想象力商品</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--  商品详情  -->
+        <div class="edit_form"></div>
+        <!--  下一步   -->
+        <div class="pre_next_wrap">
+            <!--<a class="pre_btn btn btn-default">上一步</a>-->
+            <a class="next_btn btn btn-primary">下一步</a>
+        </div>
+    </div>
 </div>
 <script src="../product/j/product_manage.js"></script>

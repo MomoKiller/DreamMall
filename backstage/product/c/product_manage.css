@@ -57,6 +57,7 @@
 .manage_wrap .screen_wrap .tr a.clean_btn{
     color: #337ab7;
     margin-left: 10px;
+    cursor: pointer;
 }
 /*tab*/
 .manage_wrap .tab_wrap{
@@ -74,6 +75,7 @@
     float: left;
     border: 1px solid #333333;
     text-align: center;
+    cursor: pointer;
 }
 .manage_wrap .tab_wrap ul li.active{
     color: #ffffff;
@@ -124,6 +126,7 @@
 }
 .manage_wrap .list_wrap .tbody li .td.no_line{
     line-height: unset;
+    position: relative;
 }
 .manage_wrap .list_wrap .tbody li .td input{
     float: left;
@@ -158,21 +161,28 @@
 }
 .manage_wrap .list_wrap .tbody li .td .product_name{
     height: 40px;
-    line-height: 40px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    width:100%;
 }
 .manage_wrap .list_wrap .tbody li .td .product_type{
     height: 20px;
     line-height: 20px;
-    margin-top: 10px;
 }
 .manage_wrap .list_wrap .tbody li .td .product_price{
 
 }
 .manage_wrap .list_wrap .tbody li .td .td_wrap{
-    height: 40px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 .manage_wrap .list_wrap .tbody li .td .td_wrap label{
-
+    display: block;
+    height: 25px;
+    line-height: 25px;
 }
 .manage_wrap .list_wrap .tbody li .td .td_wrap .visitor_num{
     
@@ -183,6 +193,10 @@
 .manage_wrap .list_wrap .tbody li .td .td_wrap .stock{
     
 }
+.manage_wrap .list_wrap .tbody li .td a{
+    color: #337ab7;
+    cursor: pointer;
+}
 .manage_wrap .list_wrap .tbody li .td .td_wrap .to_detail{
     
 }
@@ -192,7 +206,7 @@
     margin-top: 15px;
 }
 .manage_wrap .batch_wrap .btn_left{
-
+    float: left;
 }
 .manage_wrap .batch_wrap .btn_left span.all{
 
@@ -207,5 +221,176 @@
 
 }
 .manage_wrap .batch_wrap .page_wrap{
+    float: right;
+}
+
+
+
+/*   新建商品   */
+.new_wrap{
+    display: none;
+}
+/* tab */
+.new_wrap .tab{
+    border-bottom: 1px solid #e3e3e3;
+    overflow: hidden;
+}
+.new_wrap .tab li{
+    width: 100px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.new_wrap .tab li.active{
+    border-bottom: 1px solid #333333;
+}
+/* 编辑 */
+.new_wrap .edit_wrap{
+
+}
+.new_wrap .edit_wrap .edit_form{
+    overflow: hidden;
+    display: none;
+}
+.new_wrap .edit_wrap .edit_form.active{
+    display: block;
+}
+.new_wrap .edit_wrap .edit_form .tr{
+    width: 100%;
+    min-height: 50px;
+    float: left;
+}
+.new_wrap .edit_wrap .edit_form .tr .td{
+    float: left;
+    line-height: 50px;
+    min-height: 50px;
+}
+.new_wrap .edit_wrap .edit_form .tr .td:nth-child(odd){
+    width: 120px;
+    text-align: right;
+}
+.new_wrap .edit_wrap .edit_form .tr .td:nth-child(even){
+    margin-left: 15px;
+}
+.new_wrap .edit_wrap .edit_form .tr .td .product_xh,
+.new_wrap .edit_wrap .edit_form .tr .td .pro_name{
+    height: 30px;
+    line-height: 35px;
+    width: 200px;
+}
+.new_wrap .edit_wrap .edit_form .tr .td span.xh_tip{
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    color: #666666;
+}
+.new_wrap .edit_wrap .edit_form .tr .td span.bsx{
+    color: #E1251A;
+    margin-right: 5px;
+}
+.new_wrap .edit_wrap .edit_form .tr .td .img_wrap{
+    overflow: hidden;
+    width: 545px;
+}
+.new_wrap .edit_wrap .edit_form .tr .td .img_wrap .product_img{
+    height: 70px;
+    width: 70px;
+    float: left;
+}
+.new_wrap .edit_wrap .edit_form .tr .td .img_wrap .addimg{
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    width: 70px;
+    float: left;
+    margin-left: 10px;
+    border: 1px solid #e3e3e3;
+    cursor: pointer;
+}
+.new_wrap .edit_wrap .edit_form .tr .td span.img_tip{
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 10px;
+    color: #666666;
+}
+/*改写bootstrap样式--start*/
+.new_wrap .edit_wrap .edit_form .tr .td .dropdown button{
+    width: 205px;
+    height: 30px;
+    line-height: 16px;
+    border-radius: 0;
+    text-align: left;
+}
+.new_wrap .edit_wrap .edit_form .tr .td .dropdown button .caret{
+    float: right;
+    margin: 7px 0;
+}
+.new_wrap .edit_wrap .edit_form .tr .td .dropdown ul{
+    width: 205px;
+}
+/*改写bootstrap样式--end*/
+.new_wrap .edit_wrap .edit_form .tr .td .radio-inline{
+    height: 20px;
+    line-height: 20px;
+    min-width: 100px;
+}
+.new_wrap .pre_next_wrap{
+    width: 100%;
+    background-color: #eeeeee;
+    height: 40px;
+    line-height: 40px;
+}
+.new_wrap .pre_next_wrap a{
+    float: right;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+/* 规格/库存 */
+.new_wrap .edit_wrap .edit_form .tr .td .title{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.new_wrap .edit_wrap .edit_form .tr .td .title .td{
+
+}
+.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap{
+
+}
+.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li{
+
+}
+.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .list_wrap{
+
+}
+.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .list_wrap .td{
+
+}
+.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .list_wrap .td input{
+
+}
+.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .choice_wrap{
+
+}
+.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .choice_wrap .td{
+
+}
+.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .product_list{
+
+}
+.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .product_list .product_wrap{
+
+}
+.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .product_list .product_wrap .img_wrap{
+
+}
+.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .product_list .product_wrap .img_wrap img{
+
+}
+.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .product_list .product_wrap .desc{
 
 }

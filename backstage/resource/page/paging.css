@@ -1,0 +1,97 @@
+
+/*分页*/
+.pagenation{
+    height: 30px;
+    line-height: 30px;
+    margin: 5px 20px 0;
+    float: right;
+}
+.pagenation .pagenum{
+    float: left;
+}
+.pagenation .pagenum a{
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid #c2c6d3;
+    border-radius: 2px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.pagenation .indexpage{
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    width: 60px;
+    text-align: center;
+    border: 1px solid #c2c6d3;
+    border-radius: 2px;
+    cursor: pointer;
+    display: none;
+}
+.pagenation .indexpage.active{
+    display: block;
+}
+.pagenation .lastpage a{
+    width: 75px;
+    color: #c2c6d3;
+}
+.pagenation .lastpage.active a{
+    color: #333333;
+}
+.pagenation .nextpage a{
+    width: 75px;
+    color: #c2c6d3;
+}
+.pagenation .nextpage.active a{
+    color: #333333;
+}
+.pagenation .pagesubbtn a{
+    width: 45px;
+    background-color: #ededed;
+    color: #666666;
+}
+.pagenation .pageswiperbox{
+    min-width: 35px;
+    max-width: 175px;
+    overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+}
+.pagenation .pageswiperbox .pageswiper{
+    width: auto;
+    min-width: 35px;
+    overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+    height: 28px;
+}
+.pagenation .pageswiperbox .pn a{
+    height: 28px;
+    line-height: 28px;
+    width: 28px;
+}
+.pagenation .pageswiperbox .curpage a{
+    color: #f94b4b;
+    border: none;
+}
+.pagenation .pagenum.totalpage{
+    margin: 0 10px;
+}
+.pagenation .pagenum.totalpage span{
+    padding: 0 5px;
+}
+.pagenation .pagenum.pagetext .pageinput{
+    height: 24px;
+    line-height: 24px;
+    width: 40px;
+    border: 1px solid #c2c6d3;
+    border-radius: 2px;
+    margin: 0 5px;
+    text-align: center;
+}

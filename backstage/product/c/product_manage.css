@@ -252,6 +252,7 @@
 }
 .new_wrap .edit_wrap .edit_form{
     overflow: hidden;
+    min-height: 450px;
     display: none;
 }
 .new_wrap .edit_wrap .edit_form.active{
@@ -265,7 +266,7 @@
 .new_wrap .edit_wrap .edit_form .tr .td{
     float: left;
     line-height: 50px;
-    min-height: 50px;
+    min-height: 30px;
 }
 .new_wrap .edit_wrap .edit_form .tr .td:nth-child(odd){
     width: 120px;
@@ -351,46 +352,100 @@
 
 /* 规格/库存 */
 .new_wrap .edit_wrap .edit_form .tr .td .title{
+    width: 850px;
+    overflow: hidden;
+    background-color: #eeeeee;
+    padding: 5px 15px 0;
+    margin-top: 15px;
+}
+.new_wrap .edit_wrap .edit_form .tr .td .title .td{
+    float: left;
+    text-align: center;
+    width: 155px;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+}
+.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap{
+    width: 850px;
+    background-color: #eeeeee;
+    overflow: hidden;
+    padding: 0 15px 15px;
+    margin-bottom: 30px;
+}
+.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li{
+    margin-bottom: 5px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .list_wrap{
     width: 100%;
+    overflow: hidden;
+}
+.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .list_wrap .td{
+    float: left;
+    width: 155px;
+    margin: 0;
+    text-align: left;
     height: 40px;
     line-height: 40px;
 }
-.new_wrap .edit_wrap .edit_form .tr .td .title .td{
-
+.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .list_wrap .td.del{
+    width: 45px;
 }
-.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap{
-
-}
-.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li{
-
-}
-.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .list_wrap{
-
-}
-.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .list_wrap .td{
-
+.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .list_wrap .td.del a{
+    cursor: pointer;
 }
 .new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .list_wrap .td input{
-
+    height: 30px;
+    width: 150px;
 }
 .new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .choice_wrap{
-
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
 }
 .new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .choice_wrap .td{
-
+    height: 30px;
+    line-height: 30px;
+    width: 200px;
+    text-align: left;
+}
+.new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .choice_wrap .td .add_gg{
+    margin-left: 15px;
 }
 .new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .product_list{
-
+    width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
 }
 .new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .product_list .product_wrap{
-
+    width: 100px;
+    height: 130px;
+    float: left;
+    margin-right: 10px;
 }
 .new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .product_list .product_wrap .img_wrap{
-
+    height: 70px;
+    width: 70px;
+    margin: 0 auto;
 }
 .new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .product_list .product_wrap .img_wrap img{
 
 }
 .new_wrap .edit_wrap .edit_form .tr .td .gg_wrap li .product_list .product_wrap .desc{
+    display: block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-align: center;
+}
 
+/* 详情 */
+.new_wrap .edit_wrap .edit_form .tr .td .txt_editer{
+    margin-top: 10px;
 }

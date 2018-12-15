@@ -19,6 +19,7 @@ $(function(){
         init: function(){
             manage.manageEvent();
             manage.newProductEvent();
+            manage.loadEditor();
         },
         // 商品管理页事件
         manageEvent: function () {
@@ -44,6 +45,12 @@ $(function(){
                 $(this).addClass('active').siblings().removeClass('active');
                 domEditForm.eq(_tabIndex).addClass('active').siblings().removeClass('active');
             });
+        },
+        // 富文本编辑器
+        loadEditor: function(){
+            var E = window.wangEditor
+            var editor = new E('#editor')
+            editor.create()
         }
     };
     manage.init();

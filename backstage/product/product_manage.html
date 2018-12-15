@@ -282,7 +282,6 @@
                         <div class="td"><span class="bsx">*</span>零售价</div>
                         <div class="td"><span class="bsx">*</span>折扣价</div>
                         <div class="td"><span class="bsx">*</span>预警库存</div>
-                        <div class="td"><a class="glyphicon glyphicon-trash"></a></div>
                     </div>
                     <ul class="gg_wrap">
                         <li>
@@ -302,16 +301,54 @@
                                 <div class="td">
                                     <input type="text" class="product_yj">
                                 </div>
+                                <div class="td del"><a class="glyphicon glyphicon-trash"></a></div>
                             </div>
                             <div class="choice_wrap">
-                                <div class="td">关联商品<a class="glyphicon glyphicon-trash">选择商品</a></div>
+                                <div class="td">关联商品<a class="add_gg btn btn-primary btn-xs">选择商品</a></div>
                             </div>
                             <div class="product_list">
                                 <div class="product_wrap">
                                     <div class="img_wrap">
                                         <img src="../product/i/defaultImg.png" alt="">
                                     </div>
+                                    <a class="desc">想象力商品想象力商品想象力商品想象力商品想象力商品</a>
+                                </div>
+                                <div class="product_wrap">
+                                    <div class="img_wrap">
+                                        <img src="../product/i/defaultImg.png" alt="">
+                                    </div>
                                     <a class="desc">想象力商品</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list_wrap">
+                                <div class="td">
+                                    <input type="text" class="product_gg">
+                                </div>
+                                <div class="td">
+                                    <input type="text" class="product_kc">
+                                </div>
+                                <div class="td">
+                                    <input type="text" class="product_ls">
+                                </div>
+                                <div class="td">
+                                    <input type="text" class="product_zk">
+                                </div>
+                                <div class="td">
+                                    <input type="text" class="product_yj">
+                                </div>
+                                <div class="td del"><a class="glyphicon glyphicon-trash"></a></div>
+                            </div>
+                            <div class="choice_wrap">
+                                <div class="td">关联商品<a class="add_gg btn btn-primary btn-xs">选择商品</a></div>
+                            </div>
+                            <div class="product_list">
+                                <div class="product_wrap">
+                                    <div class="img_wrap">
+                                        <img src="../product/i/defaultImg.png" alt="">
+                                    </div>
+                                    <a class="desc">想象力商品想象力商品想象力商品想象力商品想象力商品</a>
                                 </div>
                                 <div class="product_wrap">
                                     <div class="img_wrap">
@@ -326,7 +363,17 @@
             </div>
         </div>
         <!--  商品详情  -->
-        <div class="edit_form"></div>
+        <div class="edit_form">
+            <div class="tr">
+                <div class="td"><span class="bsx">*</span>商品详情:</div>
+                <div class="td">
+                    <!--  富文本编辑器  -->
+                    <div class="txt_editer" id="editor">
+
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--  下一步   -->
         <div class="pre_next_wrap">
             <!--<a class="pre_btn btn btn-default">上一步</a>-->
@@ -334,4 +381,6 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript" src="../resource/wangEditor/release/wangEditor.min.js"></script>
 <script src="../product/j/product_manage.js"></script>

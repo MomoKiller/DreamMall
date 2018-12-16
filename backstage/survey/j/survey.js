@@ -4,7 +4,8 @@
 $(function(){
     var survey = {
         api: {
-            
+            'mainIonf': 'https://1cfelhwd48.execute-api.us-east-2.amazonaws.com/api/main/info',
+            'mainLine': 'https://1cfelhwd48.execute-api.us-east-2.amazonaws.com/api/main/line'
         },
         init: function(){
             survey.loadDataWrap();
@@ -12,14 +13,25 @@ $(function(){
         },
         // 数据框
         loadDataWrap: function(){
-            
+            $.getJSON(survey.api.mainIonf, {}, function(data){
+                console.log(data);
+            });
+            $.getJSON(survey.api.mainLine, {}, function(data){
+                console.log(data);
+                
+                // 数据处理
+                if(data.rtnCode == '0000'){
+                    survey.loadEacharts(data.rtnData);
+                }else{
+                    alert(data.rtnMsg);
+                }
+            });
         },
         // Echarts 表
-        loadEacharts: function(){
+        loadEacharts: function(data){
             var myChart = echarts.init(document.getElementById('eachart_form'));
             var option = {
                 title: {
-                    // text: "标题",
                     x: "center"
                 },
                 tooltip: {
@@ -42,7 +54,7 @@ $(function(){
                         type: "category",
                         name: "x",
                         splitLine: {show: false},
-                        data: ["一", "二", "三", "四", "五", "六", "七", "八", "九"]
+                        data: data.makeOrder.xData
                     }
                 ],
                 yAxis: [
@@ -56,12 +68,12 @@ $(function(){
                     {
                         name: "下单笔数",
                         type: "line",
-                        data: [1, 3, 9, 27, 81, 247, 741, 2223, 6669]
+                        data: data.makeOrder.yData
                     },
                     {
                         name: "支付订单数",
                         type: "line",
-                        data: [1, 2, 4, 8, 16, 32, 64, 128, 256]
+                        data: data.paidOrder.yData
                     }
                 ]
             };

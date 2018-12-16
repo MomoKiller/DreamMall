@@ -17,8 +17,6 @@ $(function(){
                 console.log(data);
             });
             $.getJSON(survey.api.mainLine, {}, function(data){
-                console.log(data);
-                
                 // 数据处理
                 if(data.rtnCode == '0000'){
                     survey.loadEacharts(data.rtnData);

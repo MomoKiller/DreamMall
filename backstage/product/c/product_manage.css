@@ -104,6 +104,7 @@
     height: 30px;
     line-height: 30px;
     float: left;
+    cursor: pointer;
 }
 .manage_wrap .list_wrap .thead .th .td input{
     float: left;

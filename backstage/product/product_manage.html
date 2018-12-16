@@ -14,11 +14,11 @@
             <div class="td">商品分类:</div>
             <div class="td">
                 <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="categoryId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-val="">
                         全部
                         <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <ul class="dropdown-menu" aria-labelledby="categoryId">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
                         <li><a href="#">Something else here</a></li>
@@ -28,11 +28,11 @@
             <div class="td">商品属性:</div>
             <div class="td">
                 <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="attribute" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-val="">
                             全部
                         <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <ul class="dropdown-menu" aria-labelledby="attribute">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
                         <li><a href="#">Something else here</a></li>
@@ -42,11 +42,11 @@
             <div class="td">商品状态:</div>
             <div class="td">
                 <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="status" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-val="">
                             全部
                         <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <ul class="dropdown-menu" aria-labelledby="status">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
                         <li><a href="#">Something else here</a></li>
@@ -72,15 +72,15 @@
         <div class="scroll_wrap">
             <div class="thead">
                 <div class="th">
-                    <div class="td"><input type="checkbox" value="option1">序号</div>
-                    <div class="td">商品</div>
-                    <div class="td">价格</div>
-                    <div class="td">访客量</div>
-                    <div class="td">库存</div>
-                    <div class="td">销量</div>
-                    <div class="td">属性</div>
-                    <div class="td">创建时间</div>
-                    <div class="td">操作</div>
+                    <div class="td active" data-sortBy="sortId"><input type="checkbox" value="option1">序号</div>
+                    <div class="td" data-sortBy="">商品</div>
+                    <div class="td" data-sortBy="price">价格</div>
+                    <div class="td" data-sortBy="totalSalesVolume">访客量</div>
+                    <div class="td" data-sortBy="store">库存</div>
+                    <div class="td" data-sortBy="">销量</div>
+                    <div class="td" data-sortBy="">属性</div>
+                    <div class="td" data-sortBy="createTime">创建时间</div>
+                    <div class="td" data-sortBy="">操作</div>
                 </div>
             </div>
             <ul class="tbody">
